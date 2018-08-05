@@ -1,0 +1,194 @@
+/* Print version */
+@media print {
+    @page {
+        margin-top: 20px;
+    }
+
+    .tm-sidebar, .tm-nav-item, .tm-nav-item, .tm-nav-item, #about{
+    	display: none;
+    }
+    
+
+    .tm-main-content {
+    	width: 600px;
+    	margin-left: 0;
+        padding-left: 0;
+    }
+
+    .tm-banner {
+        height: 150px;
+        padding: 0;
+    }
+
+    section:not(:first-of-type) {
+        display: none;
+    }
+
+	.pad {
+        padding: 0, 0, 0, 20;
+
+    }
+    .tm-content-box flex-2-col {
+    	margin-top: 10px;
+
+    }
+
+    h2.tm-section-title {
+        color: blue;
+        
+    }
+
+    .flex-2-col {
+        display: block;
+    }
+    
+    .tm-team-description-container {
+        max-width: none;
+        padding top: 0;
+        margin top: 0; 
+    }
+
+    .flex-item:last-child {
+        text-align: center;
+    }
+}
+
+@media screen {
+
+    /* Images within tiles rounded and tiles with text hover effect */
+    .thumbnail {
+        border-radius: 75%;
+    }
+
+    .tm-section-title-box {
+        font-size: 2.2em;
+    }
+
+    .tm-section-title-box:hover {
+        background-color: #2aabd2;
+        font-size: 2.8em;
+        color: #76cdd7;
+        
+    }
+
+    /* Color change of first letter in each paragraph to #76cdd7 and font size to 30px.*/
+    p:not(.text-xs-center)::first-letter {
+        color: #76cdd7;
+        font-size: 30px;
+    }
+
+    /* Adding box shadow to sidebar and each content block. */
+    .tm-main-nav,
+    .tm-content-box {
+        box-shadow: 0 0 20px grey;
+    }
+
+    /* Adding triangle to each section on the page using pseudo elements */
+    .tm-content-box {
+        position: relative;
+    }
+
+    .tm-content-box:not(:empty)::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-top: 26px solid #2aabd2;
+        border-right: 130px solid transparent;
+        z-index: 1;
+    }
+
+    /* Changing color of ‘How We Do It’ to gainsboro and add letter spacing 5px. */
+    .carousel-item .tm-section-title {
+        color: gainsboro;
+        letter-spacing: 5px;
+    }
+
+    /* Making each first paragraph which placed after h2 tag italic font style. */
+    h2 + p {
+        font-style: italic;
+    }
+
+    /* Changing text in the paragraph: vertical space between lines is increased, and adding some free space at the start of the first line). */
+    p:not(.tm-banner-text) {
+        line-height: 2em;
+        text-indent: 1em;
+    }
+
+    /*Applied the following styles:
+-	already visited links are becoming silver color
+-	the hovered links are looking like “6. Architects” item
+-	adding ‘new’ label to the end of words. applied only for ‘Designers’ and ‘Strategists’ items.
+ */
+    .heading h2 {
+        text-align: center;
+        color: #76cdd7;
+    }
+
+    .pad ol a {
+        color: black;
+    }
+
+    .pad ol a:visited {
+        color: silver;
+    }
+
+    .pad ol a:hover {
+        color: #76cdd7;
+        text-decoration: underline double;
+    }
+
+    .pad ol a.text::after {
+        content: "New";
+        color: red;
+        font-size: .5em;
+        vertical-align: super;
+    }
+
+    /* Added layout and styles for following block. */
+    .gallery-container .box:nth-child(odd) {
+        background-color: white;
+    }
+
+    .boxes.gallery-container div > h2{
+        font-size: 2em;
+        border-bottom: 30px;
+    }
+
+    .boxes.gallery-container .box p {
+        font-size: 1em;
+        line-height: 1.5em;
+        text-indent: initial;
+        color: black;
+    }
+
+    .boxes.gallery-container .box p::first-letter {
+        color: #2aabd2;
+    }
+
+    .tm-box-bg-title {
+        background-color: white;
+    }
+
+    /* Adding the silver border to the bottom of each item, except the last one */
+    .tm-nav-item:not(:last-of-type) {
+        border-bottom: 1.5px silver;
+    }
+
+    /* Changing the text color of text inputs and submit button to red. Adding asterisk to email field */
+    .contact-form input,
+    .contact-form button {
+        color: red;
+    }
+
+    .mandatory-field::after {
+        content: "*";
+        color: red;        
+    }
+
+    .submit-btn:hover {
+        color: white;
+        background: #2aabd2;
+        
+    }
+}
