@@ -52,6 +52,10 @@
         margin top: 0; 
     }
 
+    .flex-item:last-child {
+        text-align: center;
+    }
+
     .tm-content-box::after{
         display: none;
     }
