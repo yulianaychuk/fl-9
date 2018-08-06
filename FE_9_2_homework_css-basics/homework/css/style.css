@@ -56,30 +56,27 @@
 @media screen {
 
     /* Images within tiles rounded and tiles with text hover effect */
-    .thumbnail {
+    #about ul li img {
         border-radius: 75%;
-    }
-
-    .tm-section-title-box {
-        font-size: 2.2em;
-    }
-
-    .tm-section-title-box:hover {
-        background-color: #2aabd2;
-        font-size: 2.8em;
-        color: #76cdd7;
+    }    
         
     }
+    #about ul li.box-bg h2:hover {
+        color: #76cdd7;
+        font-size: 2.8em;
+        font-weight: bold;
+        background-color: #2aabd2;
+    }
+
 
     /* Color change of first letter in each paragraph to #76cdd7 and font size to 30px.*/
-    p:not(.text-xs-center)::first-letter {
+    p:first-letter {
         color: #76cdd7;
         font-size: 30px;
     }
 
     /* Adding box shadow to sidebar and each content block. */
-    .tm-main-nav,
-    .tm-content-box {
+    .tm-sidebar, .tm-content-box {
         box-shadow: 0 0 20px grey;
     }
 
@@ -88,15 +85,20 @@
         position: relative;
     }
 
-    .tm-content-box:not(:empty)::before {
-        content: "";
+    .tm-content-box::after{
+        content: ''; 
         position: absolute;
         top: 0;
-        left: 0;
-        border-top: 26px solid #2aabd2;
-        border-right: 130px solid transparent;
+        left: 0; 
+        border-top: 25px solid #2aabd2; 
+        border-right: 125px solid transparent;
         z-index: 1;
     }
+
+    .flex-2-col:nth-child(2)::after{
+            display: none;
+    }
+    
 
     /* Changing color of ‘How We Do It’ to gainsboro and add letter spacing 5px. */
     .carousel-item .tm-section-title {
@@ -141,7 +143,7 @@
     .pad ol a.text::after {
         content: "New";
         color: red;
-        font-size: .5em;
+        font-size: 1em;
         vertical-align: super;
     }
 
