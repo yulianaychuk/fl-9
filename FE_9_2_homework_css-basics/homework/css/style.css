@@ -25,7 +25,11 @@
     }
 
 	.pad {
-        padding: 0, 0, 0, 20;
+        padding-top: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-left: 20px;
+        
 
     }
     .tm-content-box flex-2-col {
@@ -48,9 +52,35 @@
         margin top: 0; 
     }
 
-    .flex-item:last-child {
-        text-align: center;
+    .tm-content-box::after{
+        display: none;
     }
+    
+    }p {
+        color: unset;
+        font-size: unset;
+    }
+
+    h2 + p {
+        font-style: unset;
+    }
+    .carousel-item .tm-section-title {
+        color: unset;
+        letter-spacing: unset;
+    }
+    p:first-letter {
+        color: unset;
+        font-size: unset;
+    }
+    .tm-footer {
+        color: unset;
+        font-size: unset;
+
+    p:not(.tm-banner-text) {
+        line-height: unset;
+        text-indent: unset;
+    }
+    
 }
 
 @media screen {
@@ -67,7 +97,6 @@
         font-weight: bold;
         background-color: #2aabd2;
     }
-
 
     /* Color change of first letter in each paragraph to #76cdd7 and font size to 30px.*/
     p:first-letter {
@@ -98,7 +127,6 @@
     .flex-2-col:nth-child(2)::after{
             display: none;
     }
-    
 
     /* Changing color of ‘How We Do It’ to gainsboro and add letter spacing 5px. */
     .carousel-item .tm-section-title {
@@ -154,19 +182,13 @@
 
     .boxes.gallery-container div > h2{
         font-size: 2em;
-        border-bottom: 30px;
+        border-bottom: 10px;
     }
 
-    .boxes.gallery-container .box p {
-        font-size: 1em;
-        line-height: 1.5em;
-        text-indent: initial;
-        color: black;
-    }
-
-    .boxes.gallery-container .box p::first-letter {
-        color: #2aabd2;
-    }
+    .blocks .tm-content-box .boxes.gallery-container .box  div h2 {
+        font-size: 3em;
+        color: purple;
+    }  
 
     .tm-box-bg-title {
         background-color: white;
