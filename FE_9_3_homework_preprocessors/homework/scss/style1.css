@@ -1,0 +1,31 @@
+.main-wrapper {
+  position: relative;
+  width: 100px;
+  padding: 0;
+  margin: 0; }
+
+header {
+  position: relative; }
+  header .logo {
+    display: inline-block;
+    width: 40%; }
+    header .logo img {
+      width: 100%; }
+  header nav {
+    position: absolute;
+    display: inline-block;
+    width: 60%;
+    padding: 15px 0;
+    top: 155px;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-top-style: solid;
+    border-top-width: thin;
+    text-align: center;
+    color: #2aabd2; }
+    header nav a {
+      font-size: 25px;
+      text-decoration: none;
+      padding: 0 55px; }
+
+/*# sourceMappingURL=style1.css.map */
