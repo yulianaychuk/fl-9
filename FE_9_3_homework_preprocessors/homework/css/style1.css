@@ -19,30 +19,29 @@ body {
 
 .main-wrapper {
   position: relative;
-  width: 1000px;
+  width: 960px;
   margin: 0 auto;
   padding: 0; }
-
-header {
-  position: relative; }
-  header .logo {
-    display: inline-block;
-    width: 50%; }
-    header .logo img {
-      width: 100%; }
-  header nav {
-    position: absolute;
-    display: inline-block;
-    width: 60%;
-    padding: 15px 0;
-    top: 150px;
-    border-bottom: 1px solid #666699;
-    border-top: 1px solid #666699;
-    text-align: center; }
-    header nav a {
-      font-size: 25px;
-      text-decoration: none;
-      padding: 0 50px; }
+  .main-wrapper header {
+    position: relative; }
+    .main-wrapper header .logo {
+      display: inline-block;
+      width: 50%; }
+      .main-wrapper header .logo img {
+        width: 100%; }
+    .main-wrapper header nav {
+      position: absolute;
+      display: inline-block;
+      width: 60%;
+      padding: 15px 0;
+      top: 150px;
+      border-bottom: 1px solid #666699;
+      border-top: 1px solid #666699;
+      text-align: center; }
+      .main-wrapper header nav a {
+        font-size: 25px;
+        text-decoration: none;
+        padding: 0 50px; }
 
 .toolbar {
   text-align: right; }
@@ -59,12 +58,12 @@ header {
 .post-list {
   width: 100%;
   box-sizing: border-box; }
-  .post-list article:nth-child(2n-1) {
-    vertical-align: top;
-    margin: 15px 25px 10px 0; }
+  .post-list article:nth-of_type(2n-1) {
+    width: 48%;
+    float: left; }
   .post-list article:nth-child(2n) {
-    vertical-align: top;
-    margin: 15px 0 10px 25px; }
+    width: 48%;
+    float: left; }
   .post-list article {
     box-sizing: border-box;
     display: inline-block;
@@ -112,16 +111,16 @@ header {
     color: #666699; }
   .contact-form textarea::placeholder {
     font: 500 20px Arial; }
-  .contact-form input[type="submit"] {
+  .contact-form input[type="button"] {
     transition-duration: 1s;
     cursor: pointer;
     border: transparent;
     background: #2aabd2;
     color: white;
     width: 30%; }
-    .contact-form input[type="submit"]:hover {
+    .contact-form input[type="button"]:hover {
       background: #2288a8; }
-    .contact-form input[type="submit"]:active {
+    .contact-form input[type="button"]:active {
       background: black; }
 
 footer {

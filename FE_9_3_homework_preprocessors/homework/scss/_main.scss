@@ -27,13 +27,11 @@ body {
 
 .main-wrapper {
     position: relative;
-    width: 1000px;
+    width: 960px;
     margin: 0 auto;
     padding: 0;
-    
-}
 
-header {
+    header {
     position: relative;
     .logo {
         display: inline-block;
@@ -58,6 +56,10 @@ header {
         }
     }
 }
+    
+}
+
+
 
 .toolbar {
     text-align: right;
@@ -76,14 +78,14 @@ header {
 .post-list {
     width: 100%;
     box-sizing: border-box;
-    article:nth-child(2n-1){
-        vertical-align: top;
-        margin: 15px 25px 10px 0;
-    }
+    article:nth-of_type(2n-1){
+        width: 48%;
+        float: left;
+     }
     article:nth-child(2n){
-        vertical-align: top;
-        margin: 15px 0 10px 25px;
-    }
+        width: 48%;
+        float: left;
+     }
     article {
         box-sizing: border-box;
         display: inline-block;
@@ -143,7 +145,7 @@ header {
     textarea::placeholder { 
             font: 500 20px Arial;
         }
-    input[type="submit"] {
+    input[type="button"] {
         transition-duration: 1s;
         cursor: pointer;
         border: transparent;
