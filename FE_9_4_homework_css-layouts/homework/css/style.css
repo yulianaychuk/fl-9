@@ -287,19 +287,11 @@ a {
 .footer_wrapper .footer_info .footer_about .footer_text{
 	font-size: 90%;
 }
-/*.footer_wrapper .footer_info .footer_about{
-	font-size: 90%;
-}*/
-.footer_wrapper .footer_info .footer_about{
-	width: 15%
-	margin: 0 6% 0 1%;	
-	/*align-content: stretch;*/
-}
 
-/*.footer_wrapper .footer_info:nth-child(2){
-	width: 80%
-	margin: 0 1% 0 1%;	
-} */
+.footer_wrapper .footer_info .footer_about{
+	width: 15%;
+	margin: 0 6% 0 1%;	
+}
 
 .footer_wrapper .footer_info .footer_about .footer_text{
 	color:#B7C8D9;
