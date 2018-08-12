@@ -255,8 +255,7 @@ a {
 	flex-wrap: nowrap;
 }
 
-.newsletter_subscription_form .newsletter_subscription_button,
-.footer_wrapper .footer_newsletter .newsletter_subscription_form_footer .newsletter_subscription_button {
+.newsletter_subscription_form .newsletter_subscription_button {
 	margin: 0 1% 0 0;
 	width: 20%;
 	border: 1px solid #9E9E9E;
@@ -267,8 +266,9 @@ a {
 	flex-wrap: nowrap;
 }
 
+
 .newsletter_subscription_form .newsletter_subscription_button:hover,
-.footer_wrapper .footer_newsletter .newsletter_subscription_form_footer .newsletter_subscription_button:hover {
+.footer_wrapper .footer_about .newsletter_subscription_form_footer .newsletter_subscription_button:hover {
     border-left: none;
     background-color: #9E9E9E;
 }
@@ -284,10 +284,23 @@ a {
 	font-style: italic;
 }
 
-.footer_wrapper .footer_info .footer_about{
-	margin: 0 1% 0 1%;	
-	align-content: space-around;
+.footer_wrapper .footer_info .footer_about .footer_text{
+	font-size: 90%;
 }
+/*.footer_wrapper .footer_info .footer_about{
+	font-size: 90%;
+}*/
+.footer_wrapper .footer_info .footer_about{
+	width: 15%
+	margin: 0 6% 0 1%;	
+	/*align-content: stretch;*/
+}
+
+/*.footer_wrapper .footer_info:nth-child(2){
+	width: 80%
+	margin: 0 1% 0 1%;	
+} */
+
 .footer_wrapper .footer_info .footer_about .footer_text{
 	color:#B7C8D9;
 }
@@ -331,4 +344,13 @@ hr {
 }
 .footer_wrapper .footer_bottom .footer_nav .footer_navigation_item:hover {
     color:#B7C8D9;
+}
+
+.footer_wrapper .footer_about .newsletter_subscription_form_footer .newsletter_subscription_button {
+	border: 1px solid #9E9E9E;
+	padding: 2%;
+	background: #343638;
+	color: #FFF;
+	cursor: pointer;
+	flex-wrap: nowrap;
 }
