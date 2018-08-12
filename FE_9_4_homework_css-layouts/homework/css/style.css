@@ -221,20 +221,6 @@ a {
     padding-left: 5px;
 }
 
-/*.about {
-    height: 370px;
-    display: flex;    
-    justify-content: center;
-    align-items: center;
-}
-
-.about .about_content{
-	display: flex;
-	background-color: #FFF;
-	flex-direction: row;
-	justify-content: space-between;
-}*/
-
 .newsletter_subscription {
 	margin: 1% 2% 2% 2%;
 	padding: 50px 20px ;
@@ -258,9 +244,6 @@ a {
     justify-content: space-between;
     flex-direction: row;
     width: 50%;
-    /*padding: 0 50% ;*/
-    /*justify-content: center;
-	align-items: center;*/
  }
 
 .newsletter_subscription_form .newsletter_subscription_email{
@@ -269,8 +252,7 @@ a {
 	height: 200%;
 	border: 1px solid #9E9E9E;
 	padding: 2%;
-	/*text-align: center;*/
-	
+	flex-wrap: nowrap;
 }
 
 .newsletter_subscription_form .newsletter_subscription_button,
@@ -282,6 +264,7 @@ a {
 	background: #343638;
 	color: #FFF;
 	cursor: pointer;
+	flex-wrap: nowrap;
 }
 
 .newsletter_subscription_form .newsletter_subscription_button:hover,
@@ -290,14 +273,62 @@ a {
     background-color: #9E9E9E;
 }
 
-/*.footer_wrapper{
-	display: flex;
-
-}*/
-
 .footer_wrapper .footer_info{
+	display: flex;
+	justify-content: space-evenly;
+    flex-direction: row;
+    align-content: space-around;
+}
+
+.footer_wrapper .footer_info .footer_about .footer_text.last_tweet{
+	font-style: italic;
+}
+
+.footer_wrapper .footer_info .footer_about{
+	margin: 0 1% 0 1%;	
+	align-content: space-around;
+}
+.footer_wrapper .footer_info .footer_about .footer_text{
+	color:#B7C8D9;
+}
+
+.footer_wrapper .footer_info .footer_about .footer_text a{
+	color:#B7C8D9;
+}
+.footer_wrapper .footer_info .footer_about .footer_text a:hover {
+    color: #E8E8E8;
+}
+
+.footer_wrapper .footer_bottom{
 	display: flex;
 	justify-content: space-between;
     flex-direction: row;
+    align-items: center;
 
+}
+.footer_wrapper .footer_bottom .footer_nav{
+	display: flex;
+	justify-content: space-evenly;
+    flex-direction: row;
+	margin: 0 2% 0 3%;
+	color: transparent;
+
+}
+
+.footer_wrapper .footer_bottom .copyright{
+	color:#B7C8D9;	
+}
+
+hr {
+	margin: 0 1% 0 1%;
+}
+
+.footer_wrapper .footer_bottom .footer_nav .footer_navigation_item{
+	margin: 0 15% 0 15%;
+	color:#343638;
+	text-decoration: none;
+
+}
+.footer_wrapper .footer_bottom .footer_nav .footer_navigation_item:hover {
+    color:#B7C8D9;
 }
