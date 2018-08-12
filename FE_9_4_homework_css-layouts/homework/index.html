@@ -1,12 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>CSS Layouts</title>
-</head>
+<html lang="en-la">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>CSS Layouts</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
 <body>
-    <!-- Your code goes here -->
+    <header class="header_container">
+        <div class="top_navigation">
+            <a class="logo">BLACK & WHITE</a>
+            <nav>
+                <ul class="main_navigation">
+                    <li><a href="/" class="main_navigation_item">Home</a></li>
+                    <li><a href="/about" class="main_navigation_item">About</a></li>
+                    <li><a href="/vacancies" class="main_navigation_item">Vacancies</a></li>
+                    <li><a href="/shop" class="main_navigation_item">Shop</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="title">
+            <h1 class="brand">BLACK <span class="brand_1">&</span> WHITE</h1>
+            <p class="since">An Original Brand Since 1965</p>
+        </div>
+        <a href="#" class="button_show_more">Show More</a>
+    </header>
+    <main>
+	    <section class="about">
+	        <div class="about_content">
+	            <h2 class="title_content" lang="la">Lorem ipsum dolor, consectetur adipiscing.<br>
+	            	Aenean <strong>commodo ligula</strong> eget dolor.</h2>
+	            <p class="text" lang="la">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget 
+					dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, 
+					nascetur ridiculus mus. Donee quam felis, ultricies nec, pellentesque eu, pretium quis, 
+					sem. Nulla consequat massa quis enim.
+	            </p>
+	        </div>
+	    </section>
+		<section class="articles">
+
+	       <h2 class="articles_header">Read some of our <strong>featured articles</strong></h2>
+
+	        <article class="article">
+		        <div class="article_image_wrapper">
+		            <a class="featured_articles" href="#" title="featured_articles">
+			            <img class="img1" src="img/sample.jpg" alt="">
+			            <h2 class="article_header" lang="la">Januari'15 <strong>South France</strong></h2>
+			        </a>
+			        <button class="featured_article_like" title="Like!">172</button>
+			    </div>
+			    <p class="featured_article_content" lang="la">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+			    	aut ipsa dicta dolorem a quibusdam eum quasi vel nobis 
+					dolores dolore tempora, ex, assumenda quam veritatis, iure 
+					optio soluta sequi?</p> 		                       
+	        </article>
+
+	        <article class="article">
+		        <div class="article_image_wrapper">
+		            <a class="featured_articles" href="#" title="featured_articles">
+			            <img class="img1" src="img/sample3.jpg" alt="">
+			            <h2 class="article_header" lang="la">Januari'15 <strong>South America</strong></h2>
+			        </a>
+			        <button class="featured_article_like" title="Like!">172</button>
+			    </div>
+			    <p class="featured_article_content" lang="la">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+			    	aut ipsa dicta dolorem a quibusdam eum quasi vel nobis 
+					dolores dolore tempora, ex, assumenda quam veritatis, iure 
+					optio soluta sequi?</p> 		                       
+	        </article>
+
+	        <article class="article">
+		        <div class="article_image_wrapper">
+		            <a class="featured_articles" href="#" title="featured_articles">
+			            <img class="img1" src="img/sample.jpg" alt="">
+			            <h2 class="article_header" lang="la">Januari'15 <strong>South France</strong></h2>
+			        </a>
+			        <button class="featured_article_like" title="Like!">20</button>
+			    </div>
+			    <p class="featured_article_content" lang="la">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+			    	aut ipsa dicta dolorem a quibusdam eum quasi vel nobis 
+					dolores dolore tempora, ex, assumenda quam veritatis, iure 
+					optio soluta sequi?</p> 		                       
+	        </article>
+
+	        <article class="article">
+		        <div class="article_image_wrapper">
+		            <a class="featured_articles" href="#" title="featured_articles">
+			            <img class="img1" src="img/sample3.jpg" alt="">
+			            <h2 class="article_header" lang="la">Januari'15 <strong>South America</strong></h2>
+			        </a>
+			        <button class="featured_article_like" title="Like!">150</button>
+			    </div>
+			    <p class="featured_article_content" lang="la">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+			    	aut ipsa dicta dolorem a quibusdam eum quasi vel nobis 
+					dolores dolore tempora, ex, assumenda quam veritatis, iure 
+					optio soluta sequi?</p> 		                       
+	        </article>
+	    </section>
+
+	    <section class="newsletter_subscription">
+	        <h2 class="newsletter_subscription_header">Subscribe to our <strong>newsletter</strong></h2>
+
+	        <form action="/subscribtion" method="post" class="newsletter_subscription_form">
+	        	<input type="email" name="email" class="newsletter_subscription_email" placeholder="Enter your e-mail address" required>
+	        	<input type="submit" class="newsletter_subscription_button" value="Subscribe">
+	        </form>
+
+	    </section>
+    </main>
+	<footer class="footer_wrapper">
+	    <section class="footer_info">
+	        <div class="footer_about">
+	            <h4 class="footer_info_header">Black & White</h4>
+	            <p class="footer_text" lang="la">consequuntur magni dolores ratione
+	            	voluptatem sequi nescue porro quisquam
+	            	est, qui d sum quia dolor sit amet, cons
+	        		sum quia sum quia</p>
+	        </div>
+	        <div class="footer_about">
+	            <h4 class="footer_info_header">Last Tweet</h4>
+	            <p class="footer_text" lang="la">. . . aerat vluptatem . Ut en i et illi dolore
+	            	magnam aliqua et aerat voluptatem. Utils
+	           		eni tils et a I is minima veniam</p>
+	        </div>
+	        <div class="footer_about">
+	            <h4 class="footer_info_header">Contact</h4>
+	            <p class="footer_text"><a href="www.loremipsumdolar.nl"></a>www.loremipsumdolar.nl</p>
+	            <p class="footer_text"><a href="https://www.google.com/maps/">182 AB Your Street Name</a></p> 
+				<p class="footer_text"><a href="e-mail@loremipsum.com">e-mail@loremipsum.com</a></p>	 
+				<p class="footer_text"><a>+(121)01 23 45 679</a></p>	 
+			</div>
+	        <div class="footer_newsletter">
+	            <h4 class="footer_info_header">Newsletter</h4>
+	            <p class="footer_text">Neque porro quisquam eist, im ipsum quia
+	            	dolor sit amettur, adipisci velit,</p>
+	            <form action="/subscribtion" method="post" class="newsletter_subscription_form_footer">
+	                <input type="email" name="email" class="newsletter_subscription_email" placeholder="Enter your e-mail address" required>
+	                <input type="submit" class="newsletter_subscription_button" value="Subscribe">
+	            </form>
+	        </div>
+	    </section>
+		<div class="footer_bottom">
+		    <p class="copyright">&copy; 2015 Ruben Stom</p>
+		    <ul class="footer_nav">
+		    	<li><a href="/" class="footer_navigation_item">Home</a></li>
+		    	<li><a href="/about" class="footer_navigation_item">About</a></li>
+		    	<li><a href="/vacancies" class="footer_navigation_item">Vacancies</a></li>
+		    	<li><a href="/shop" class="footer_navigation_item">Shop</a></li>			            
+		    </ul>
+		</div>
+	</footer>
 </body>
 </html>
