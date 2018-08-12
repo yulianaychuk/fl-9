@@ -275,7 +275,7 @@ a {
 
 .footer_wrapper .footer_info{
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-around;
     flex-direction: row;
     align-content: space-around;
 }
@@ -308,7 +308,7 @@ a {
 }
 .footer_wrapper .footer_bottom .footer_nav{
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-around;
     flex-direction: row;
 	margin: 0 2% 0 3%;
 	color: transparent;
