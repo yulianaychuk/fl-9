@@ -1,25 +1,197 @@
-/*
- * Feel free to change name of colors if you need it
- * Feel free to add new colors if you need it
- */
-:root {
-  --bg-color--dark: #0a1223;
-  --bg-color--light: #fff;
-  --link: #5d5d5d;
-  --link--active: #54597d;
-  --link--hover: #54597d;
-  --article-title: #ddd;
-  --article-title--dark: #000;
-  --thumbnail--description: #5d5d5d;
-
-  /* These styles are needed only for media query max-width: 575px */
-
-  /* The 'Up' button (circle button at right bottom corner) */
-  --btn-color: #fff;
-  --btn-bg-color: #5ebcff;
-
-  --navigation-border-bottom: #ddd;
-  --thumbnail-title: #484747;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0a1223;
 }
 
-/* Your styles go here */
+.main_wrapper {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 90vw;
+}
+
+.main_wrapper .main_header {
+  color: #ddd;
+  text-align: center;
+  font-size: 3em;
+  width: 100%;
+  margin: 5% 0 0 0;
+  flex-wrap: nowrap;
+}
+
+.main_wrapper .content {
+  width: 80vw;
+  margin: 5% 0 5% 5%;
+}
+
+.main_wrapper .content .fact .fact_text .fact_title {  
+  background: linear-gradient(to right, #ddd, #484747);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
+  font-size: 2.1em;
+  margin: 0 0 5% 0;
+}
+
+.main_wrapper .content .fact .fact_text .fact_description {
+  text-indent: 2%;
+  text-align: justify;
+  color: #5d5d5d;
+  font-size: 1.2em;
+}
+
+.top_nav .nav_li_item .top_nav_link {
+  color: #5d5d5d;
+  text-decoration: none;
+  flex-wrap: nowrap;
+}
+
+.top_nav .nav_li_item .top_nav_link:hover {
+  color: #54597d;
+}
+
+.top_nav .nav_li_item .top_nav_link:active
+ {
+  color: #54597d;
+}
+
+.top_nav .nav_li_item .top_nav_link.active{
+  color: #54597d;
+}
+
+.main_wrapper .content .fact .moon_img {
+  width: 50%;
+  height: auto;  
+}
+
+.top_nav {
+  list-style-type: none;
+  padding: 2%;  
+  display: flex;  
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+
+.top_nav .nav_li_item {
+  padding: 0 0 0 3%;
+}
+
+.main_wrapper .content .fact {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  margin: 0 0 7% 0;
+}
+
+.main_wrapper .content .fact:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.main_wrapper .content .fact .fact_text {
+  width: 50%;  
+}
+
+.scroll {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .main_wrapper .content .fact,
+  .main_wrapper .content .fact:nth-child(odd) {
+    flex-direction: column-reverse;    
+  }
+
+  .top_nav {
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+
+  .main_wrapper .main_header {
+    flex-wrap: wrap;
+  }
+
+  .main_wrapper .content .fact .fact_text .fact_title {
+    font-size: 1.5em;
+
+  } 
+  .main_wrapper .content .fact .moon_img, 
+  .main_wrapper .content .fact .fact_text {
+    width: 70vw;
+  }
+
+  .main_wrapper .content .fact .moon_img {
+    margin: 7% 0 0 0;
+  } 
+}
+
+@media (max-width: 575px) {
+  body {
+    background-color: #fff;
+  }
+
+  .main_wrapper {
+    display:flex;
+    width: 80vw;
+  }
+
+  .main_wrapper .content {
+    width: 70vw;
+  }
+
+  .top_nav {
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;  
+  }
+
+  .top_nav .nav_li_item .top_nav_link.active,
+  .top_nav .nav_li_item .top_nav_link:active {
+    font-weight: bold;
+  }
+
+  .top_nav .nav_li_item {
+    border-bottom: 1px solid #ddd;
+    padding: 1%;
+    flex-wrap: nowrap;     
+  }  
+
+  .main_wrapper .main_header {
+    font-size: 2.1em;
+    color: #000;
+    flex-wrap: wrap;
+  }
+
+  .main_wrapper .content .fact .fact_text .fact_title {
+    font-size: 1.5em;
+    background: unset;   
+    -webkit-text-fill-color: unset;
+    -webkit-background-clip: unset;
+    color: #484747;  
+  }
+
+  .main_wrapper .content .fact .fact_text .fact_description {
+    font-size: 1.1em;
+    color: #484747;
+  }  
+
+  .scroll {
+    display: block;
+    border-radius: 50%;
+    width: 10%;
+    height: 7%;
+    background-color: #5ebcff;
+    color: #fff;
+    box-shadow: 15px 15px 25px lightgray;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;       
+  }  
+
+  .scroll:visited {
+    color: #fff;
+  }
+}
