@@ -5,4 +5,4 @@ function reverseNumber(n) {
 
     return n > 0 ? revNum : -revNum;
 }
-reverseNumber(testNum);
+alert(reverseNumber(testNum));

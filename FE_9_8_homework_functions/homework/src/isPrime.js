@@ -16,4 +16,4 @@ function isPrime(n) {
     }
     return isPrime;
 }
-isPrime(eleven);
+alert(isPrime(eleven));

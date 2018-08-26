@@ -3,4 +3,4 @@ const five =5;
 function isBigger(a, b) {
     return a > b;
 }
-isBigger(one, five); 
+alert(isBigger(one, five)); 

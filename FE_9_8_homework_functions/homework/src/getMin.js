@@ -10,4 +10,4 @@ function getMin() {
     }
     return min;
 }
-getMin(two, five);
+alert(getMin(two, five));

@@ -3,4 +3,4 @@ const three = 3;
 function getClosestToZero(){
     return [...arguments].sort((a, b) => Math.abs(a) - Math.abs(b))[0];
 }
-getClosestToZero(two,three);
+alert(getClosestToZero(two,three));

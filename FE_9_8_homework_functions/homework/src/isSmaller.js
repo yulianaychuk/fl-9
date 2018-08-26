@@ -6,4 +6,4 @@ function isBigger(a, b) {
 function isSmaller(a, b) {
     return !isBigger(a, b);
 }
-isSmaller(one, five); 
+alert(isSmaller(one, five)); 
