@@ -17,7 +17,7 @@ function forEach(array,func){
 
 function map(array,func){
     let arrRes = [];
-    forEach(arrRes,function(el){
+    forEach(array,function(el){
         arrRes.push(func(el));
     });
     return arrRes;
