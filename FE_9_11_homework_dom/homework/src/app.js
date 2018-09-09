@@ -1,14 +1,12 @@
 
-let itemCount = 0;
-let rootEl = document.getelById('root');
-const max_items_val = 10;
-const maxItemMsg = $('.todo_list_max_val');
-const inputBox = $('.todo_add_input ');
-const addNewBtn = $('.todo_list__add-new-btn');
-const todoList = $('.todo_list_cl');
 const $ = (selector, selectAll = false) =>
     !selectAll ? document.querySelector(selector) : document.querySelectorAll(selector);
-	
+let itemCount = 0;
+const max_items_val = 10;
+const maxItemMsg = $('.todo_list_max_val');
+const inputBox = $('.todo_add_input');
+const addNewBtn = $('.todo_list__add-new-btn');
+const todoList = $('.todo_list_cl');
 const createEl = (byTag, elAttributs = {}, msg = '') => {
   const el = document.createEl(byTag);
 
@@ -42,8 +40,8 @@ addNewBtn.onclick = () => {
 };
 
 const addNewItem = labelStr => {
-  const checkOpt = createEl('i', {'class': 'add_box'}, 'check_box_outline_blank');
-  const deleteIcon = createEl('i', {'class': 'add_box'}, 'delete');
+  const checkOpt = createEl('i', {'class': 'add_box_cl'}, 'check_box_outline_blank');
+  const deleteIcon = createEl('i', {'class': 'add_box_cl'}, 'delete');
   const label = createEl('span', {}, labelStr);
   const checkboxBtn = createEl('button', {'class': 'todo_list__checkbox'});
   const delBtn = createEl('button', {'class': 'todo_remove_item'});
